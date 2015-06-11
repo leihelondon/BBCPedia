@@ -1,0 +1,36 @@
+.intGEL .intGEL-dropdown-button button {
+  height: 33px;
+  line-height: 16px;
+}
+
+.intGEL .intGEL-dropdown-button .dropdown-menu {
+  overflow-y: auto;
+  max-width: 185px;
+  max-height: 400px;
+}
+
+.intGEL .intGEL-dropdown-button .dropdown-menu > li {
+  padding: 3px 0;
+}
+
+.intGEL .intGEL-dropdown-button .dropdown-menu > li.information {
+  font-size: 11px;
+  line-height: 20px;
+  padding: 10px 15px;
+}
+
+.intGEL .intGEL-dropdown-button .dropdown-menu > li > a {
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.intGEL .intGEL-dropdown-button .dropdown-menu > li > a:hover {
+  background: #eee;
+}
+
+.intGEL .intGEL-dropdown-button .dropdown-menu > li.information, .intGEL .intGEL-dropdown-button .dropdown-menu > li.disabled a {
+  color: #999;
+}
+
+/*# sourceMappingURL=../src/internalgel-candidate.css.map */

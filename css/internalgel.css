@@ -1,0 +1,1392 @@
+/*
+Internal Gel namespace
+every class name is preceded by
+intGEL-
+*/
+.intGEL body, body.intGEL {
+  line-height: 1.4em;
+  font-family: "Helvetica Neue", Arial;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+.intGEL {
+  /* basic elements */
+  /* page elements */
+  /* tooltip */
+  /* progress area */
+  /* link for opening collapsed sections */
+  /* select */
+  /* main menu */
+  /* tabs */
+  /* icons */
+  /* generic form elements */
+  /* form group */
+  /* firefox 19+ */
+  /* ie */
+  /* buttons */
+  /* header */
+  /* Modal window */
+  /* for large viewports */
+  /* for small viewports */
+  /* border-box model */
+  /* additional script styles */
+}
+
+.intGEL .row {
+  padding: 0;
+  margin: 0;
+}
+
+.intGEL h1, .intGEL h2, .intGEL h3, .intGEL h4, .intGEL h5, .intGEL h6, .intGEL .h1, .intGEL .h2, .intGEL .h3, .intGEL .h4, .intGEL .h5, .intGEL .h6 {
+  color: inherit;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.intGEL h1 {
+  margin: 0 0 16px;
+  font-size: 1.5em;
+}
+
+.intGEL h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 28px 0 8px;
+}
+
+.intGEL h3 {
+  font-size: 16px;
+  font-weight: inherit;
+  margin: 8px 0 4px;
+}
+
+.intGEL a {
+  color: #3f81cc;
+}
+
+.intGEL a:hover {
+  color: #3f81cc;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.intGEL a:active {
+  color: #2e64a0;
+  cursor: pointer;
+}
+
+.intGEL ul {
+  padding: 12px 24px;
+}
+
+.intGEL li {
+  padding: 6px 0;
+}
+
+.intGEL .intGEL-fixed {
+  position: fixed !important;
+  left: 0;
+  right: 0;
+  z-index: 900;
+}
+
+.intGEL .intGEL-formHeader-title {
+  color: #555;
+  font-size: 18px;
+  padding: 0;
+  margin: 0 0 4px 0;
+  font-weight: 700;
+}
+
+.intGEL .intGEL-fieldDescription {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.intGEL .intGEL-optionListTitle {
+  color: #555;
+  font-size: 13px;
+  padding: 0;
+  margin: 0 0 4px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.intGEL .intGEL-multipleOptionsList {
+  margin: 0 0 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.intGEL .intGEL-multipleOptionsList li {
+  padding: 2px 0;
+}
+
+.intGEL input[type="radio"].intGEL-input-option, .intGEL input[type="checkbox"].intGEL-input-option {
+  display: inline-block;
+  width: auto;
+  margin-right: 8px;
+}
+
+.intGEL .disabled label {
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+}
+
+.intGEL .intGEL-label.intGEL-multipleOption, .intGEL label.intGEL-multipleOption {
+  display: inline-block;
+  cursor: default;
+  padding: 2px 0;
+  font-size: 16px;
+}
+
+.intGEL .ui-tooltip {
+  padding: 4px 12px;
+  position: absolute;
+  z-index: 9999;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 13px;
+  background: #fff;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 3px !important;
+}
+
+.intGEL body .ui-tooltip {
+  line-height: 1.3em;
+}
+
+.intGEL .intGEL-validationSteps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+.intGEL .intGEL-validationSteps li {
+  display: inline-block;
+  margin: 0;
+  padding: 0 12px 0 0;
+}
+
+.intGEL .intGEL-validationSteps li.intGEL-completed {
+  padding: 0 12px 0 0;
+  font-weight: 700;
+}
+
+.intGEL .intGEL-validationSteps li.intGEL-completed .glyphicon {
+  color: green;
+}
+
+.intGEL .intGEL-validationSteps li.intGEL-notCompleted {
+  padding: 0 12px 0 0;
+  color: #666;
+}
+
+.intGEL .intGEL-validationSteps li.intGEL-notCompleted .glyphicon {
+  color: green;
+}
+
+.intGEL .intGEL-progress {
+  margin-bottom: 8px;
+}
+
+.intGEL a.intGEL-expand {
+  margin: 8px 0 -8px;
+  display: inline-block;
+  font-size: 13px;
+}
+
+.intGEL .intGEL-progress {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+  height: 12px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.intGEL .intGEL-progress-bar {
+  background-color: #428bca;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15) inset;
+  color: #ffffff;
+  float: left;
+  font-size: 12px;
+  height: 100%;
+  line-height: 20px;
+  text-align: center;
+  transition: "width 0.6s ease 0s";
+  -webkit-transition: "width 0.6s ease 0s";
+  -ms-transition: "width 0.6s ease 0s";
+  -moz-transition: "width 0.6s ease 0s";
+  -o-transition: "width 0.6s ease 0s";
+  -khtml-transition: "width 0.6s ease 0s";
+  width: 0;
+}
+
+.intGEL .intGEL-progress {
+  width: 92%;
+  height: 5px;
+  box-shadow: none;
+  border-radius: 3px;
+}
+
+.intGEL .intGEL-progress-bar-grey {
+  background: #999 !important;
+}
+
+.intGEL .pull-right {
+  float: right !important;
+}
+
+.intGEL .pull-left {
+  float: left !important;
+}
+
+.intGEL .intGEL-arrow {
+  font-size: 12px;
+  position: relative;
+  width: 80%;
+}
+
+.intGEL .intGEL-arrow:after {
+  content: "\f0d7";
+  font-family: 'FontAwesome';
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 1px;
+  font-size: 16px;
+  pointer-events: none;
+  padding: 6px 10px;
+  text-align: right;
+}
+
+.intGEL .intGEL-chunk .intGEL-select {
+  -webkit-appearance: none;
+  border-radius: 3px;
+  box-shadow: none;
+  border: 1px solid #e9e9e9;
+  background: #f4f4f4;
+  font-size: 16px;
+  height: auto;
+  color: #444;
+  padding: 6px 32px 6px 12px;
+  cursor: pointer;
+  margin: 0 !important;
+  width: 100%;
+  font-weight: 300;
+  -moz-appearance: none;
+}
+
+.intGEL .intGEL-chunk option[value='0'] {
+  color: #333;
+  font-weight: 700;
+}
+
+.intGEL .intGEL-chunk .intGEL-select:hover {
+  border-color: #ccc;
+  outline: none;
+  cursor: default;
+}
+
+.intGEL .intGEL-chunk .intGEL-select:focus {
+  border-color: #555;
+  outline: none;
+}
+
+.intGEL .intGEL-navbar-toggle {
+  margin: 0;
+  color: #fff;
+  padding: 8px;
+  margin: -8px;
+  font-size: 18px;
+}
+
+.intGEL .intGEL-navbar-collapse {
+  clear: both;
+  padding: 0;
+  border-top: 0;
+  box-shadow: none;
+  text-align: right;
+}
+
+.intGEL .intGEL-menu {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+.intGEL .intGEL-menu li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.intGEL .intGEL-menu li a {
+  color: #fff;
+  padding: 0 8px;
+  font-size: 13px;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.intGEL .intGEL-menu li a:hover {
+  color: #fff;
+  padding: 0 8px;
+  font-size: 13px;
+}
+
+.intGEL .intGEL-menu li a:active {
+  color: #fff;
+  padding: 0 8px;
+  font-size: 13px;
+}
+
+.intGEL .intGEL-menu li.intGEL-selected a {
+  font-weight: 700;
+  color: #fff;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.intGEL .intGEL-version {
+  font-size: 10px;
+}
+
+.intGEL .intGEL-tabpanel .nav-tabs {
+  margin: 0;
+  padding: 0;
+}
+
+.intGEL .intGEL-tabpanel .nav-tabs > li {
+  padding: 0;
+  margin-bottom: -1px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.intGEL .intGEL-tabpanel .nav-tabs li a {
+  background: #ececec;
+  border-radius: 0;
+  padding: 5px 10px;
+  border-color: #d6d6d6;
+  color: #000;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.intGEL .intGEL-tabpanel .nav-tabs li a:hover {
+  background: #ececec;
+  border-radius: 0;
+  border-color: #d6d6d6;
+  text-decoration: underline;
+}
+
+.intGEL .intGEL-tabpanel .nav-tabs > li.active > a,
+.intGEL .intGEL-tabpanel .nav-tabs > li.active > a:hover,
+.intGEL .intGEL-tabpanel .nav-tabs > li.active > a:focus {
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+  background: #fff;
+  border-bottom: 1px solid #fff;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.intGEL .intGEL-tabpanel .tab-content {
+  border: 1px solid #d6d6d6;
+  border-top: 0;
+  padding: 12px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.intGEL .intGEL-smallicons {
+  font-size: 12px;
+}
+
+.intGEL .intGEL-formElement {
+  padding: 14px 8px;
+}
+
+.intGEL .intGEL-formElement .intGEL-element {
+  padding: 10px 0;
+}
+
+.intGEL .intGEL-formGroup {
+  padding: 12px 12px 0;
+  background: #fff;
+  border-radius: 0;
+  border-width: 1px 0 0;
+  border-style: solid;
+  border-color: #000;
+}
+
+.intGEL .intGEL-defaultValue {
+  font-size: 13px;
+  padding-bottom: 0;
+}
+
+.intGEL .intGEL-formgroupTitle {
+  padding: 10px 12px;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #e6e6e6;
+  margin: -12px -12px 0;
+  font-weight: 700;
+}
+
+.intGEL .intGEL-formgroupTitle, .intGEL .intGEL-formgroupTitle a {
+  color: #555;
+}
+
+.intGEL .intGEL-formgroupTitle .intGEL-icon {
+  margin: 0 12px;
+}
+
+.intGEL .intGEL-formgroupTitle a {
+  display: block;
+}
+
+.intGEL .intGEL-textarea {
+  min-height: 180px !important;
+}
+
+.intGEL .intGEL-code {
+  display: block;
+  color: #555;
+  font-size: 13px;
+  padding: 12px;
+  background: #f0f0f0;
+}
+
+.intGEL .intGEL-codeLine {
+  display: block;
+  font-size: 12px;
+}
+
+.intGEL .intGEL-indent {
+  padding: 0 0 0 16px;
+}
+
+.intGEL .intGEL-indentMore {
+  padding: 0 0 0 32px;
+}
+
+.intGEL .intGEL-indentEvenMore {
+  padding: 0 0 0 48px;
+}
+
+.intGEL .intGEL-label {
+  display: block;
+  font-weight: inherit;
+  margin-bottom: 3px;
+  color: #000;
+  padding: 0;
+  font-size: 13px;
+  cursor: default;
+}
+
+.intGEL .intGEL-invisible {
+  visibility: hidden !important;
+}
+
+.intGEL .intGEL-input, .intGEL .intGEL-textarea {
+  border-radius: 3px;
+  box-shadow: none;
+  border: 1px solid #e9e9e9;
+  background: #f4f4f4;
+  font-size: 16px;
+  height: auto;
+  color: #444;
+  padding: 6px 12px;
+  display: block;
+  width: 98%;
+}
+
+.intGEL .intGEL-borderlessInput {
+  border-radius: 3px;
+  box-shadow: none;
+  background: #fff;
+  font-size: 20px;
+  height: auto;
+  border-width: 0;
+  color: #666;
+  padding: 0 0 10px;
+}
+
+.intGEL .intGEL-borderlessTextarea {
+  border-radius: 3px;
+  box-shadow: none;
+  background: #fff;
+  font-size: 16px;
+  min-height: 180px;
+  border-width: 0;
+  color: #666;
+  padding: 0 0 10px;
+}
+
+.intGEL .intGEL-input:hover, .intGEL .intGEL-textarea:hover {
+  border-color: #ccc;
+}
+
+.intGEL .intGEL-input[disabled='disabled'], .intGEL .intGEL-textarea[disabled='disabled'] {
+  border-radius: 3px;
+  color: #ccc;
+  box-shadow: none;
+  border-width: 1px;
+  border-style: solid;
+  background: #fff;
+  font-size: 16px;
+  height: auto;
+  padding: 6px 12px;
+  border-color: #f0f0f0;
+  display: block;
+  width: 98%;
+}
+
+.intGEL .intGEL-error.intGEL-input, .intGEL .intGEL-error .intGEL-input, .intGEL .intGEL-error .intGEL-select {
+  border-radius: 3px;
+  box-shadow: none;
+  border-width: 1px;
+  border-style: solid;
+  background: #FFE7BC;
+  font-size: 16px;
+  height: auto;
+  color: #444;
+  padding: 6px 12px;
+  border-color: #d31c00;
+  display: block;
+  width: 98%;
+}
+
+.intGEL .intGEL-darkBackground .intGEL-error.intGEL-input,
+.intGEL .intGEL-darkBackground .intGEL-error .intGEL-input,
+.intGEL .intGEL-darkBackground .intGEL-error .intGEL-select {
+  background: #FFE7BC;
+}
+
+.intGEL .intGEL-error .intGEL-errordetails {
+  color: #d31c00;
+  margin-top: 3px;
+  font-weight: 700;
+}
+
+.intGEL .intGEL-input:focus, .intGEL .intGEL-textarea:focus {
+  border-color: #555;
+  outline: none;
+}
+
+.intGEL .intGEL-error .intGEL-input:focus,
+.intGEL .intGEL-error .intGEL-textarea:focus,
+.intGEL .intGEL-error .intGEL-select:focus,
+.intGEL .intGEL-darkBackground .intGEL-error .intGEL-input:focus,
+.intGEL .intGEL-darkBackground .intGEL-error .intGEL-textarea:focus,
+.intGEL .intGEL-darkBackground .intGEL-error .intGEL-select:focus {
+  border-color: #d31c00;
+  outline: none;
+}
+
+.intGEL .intGEL-errordetails {
+  font-size: 13px;
+  margin: 0 0 6px;
+  color: #999;
+  display: block;
+}
+
+.intGEL ::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+.intGEL ::-moz-placeholder {
+  color: #a8a8a8;
+}
+
+.intGEL :-ms-input-placeholder {
+  color: #a8a8a8;
+}
+
+.intGEL input:-moz-placeholder {
+  color: #a8a8a8;
+}
+
+.intGEL .intGEL-groupOfFields {
+  padding: 16px 16px 0;
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  margin: 0 0 26px;
+}
+
+.intGEL .intGEL-darkBackground {
+  background: #f0f0f0;
+}
+
+.intGEL .intGEL-negative {
+  background: #000;
+}
+
+.intGEL .intGEL-darkBackground .intGEL-code {
+  background: #fff;
+}
+
+.intGEL .intGEL-negative .intGEL-label {
+  display: block;
+  font-weight: inherit;
+  margin-bottom: 3px;
+  color: #fff;
+  padding: 0;
+  font-size: 13px;
+}
+
+.intGEL .intGEL-negative .intGEL-input {
+  border-color: #fff;
+  outline: none;
+}
+
+.intGEL .intGEL-darkBackground .intGEL-input, .intGEL .intGEL-darkBackground .intGEL-textarea, .intGEL .intGEL-darkBackground .intGEL-select {
+  background: #fff;
+}
+
+.intGEL .intGEL-negative .intGEL-input:focus {
+  border-color: #fff;
+  outline: none;
+}
+
+.intGEL .intGEL-darkBackground .intGEL-input:focus {
+  border-color: #555;
+  outline: none;
+}
+
+.intGEL .intGEL-buttonsRow {
+  margin: 50px 25px 0;
+}
+
+.intGEL .intGEL-btn-group {
+  margin: 6px 7px 6px 0;
+}
+
+.intGEL .intGEL-btn {
+  -moz-user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.42857;
+  padding: 6px 12px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin: 0;
+  outline: none;
+}
+
+.intGEL .intGEL-btn-publishing {
+  background: #5cb85c;
+  border: 1px solid transparent !important;
+  color: #fff;
+}
+
+.intGEL .intGEL-btn-publishing:hover, .intGEL .intGEL-btn-publishing:focus, .intGEL .intGEL-btn-publishing:active, .intGEL .intGEL-btn-publishing.active, .intGEL .open .dropdown-toggle.intGEL-btn-publishing {
+  background-color: #48944A;
+  color: #fff;
+}
+
+.intGEL .intGEL-btn-primary {
+  background: #000;
+  border: 1px solid transparent !important;
+  color: #fff;
+}
+
+.intGEL .intGEL-btn-primary:hover, .intGEL .intGEL-btn-primary:focus, .intGEL .intGEL-btn-primary:active, .intGEL .intGEL-btn-primary.active, .intGEL .open .dropdown-toggle.intGEL-btn-primary {
+  color: #fff;
+}
+
+.intGEL .intGEL-btn-secondary {
+  background: #8D8D8D;
+  color: #fff;
+}
+
+.intGEL .intGEL-btn-secondary:hover, .intGEL .intGEL-btn-secondary:focus, .intGEL .intGEL-btn-secondary:active, .intGEL .intGEL-btn-secondary.active, .intGEL .open .dropdown-toggle.intGEL-btn-secondary {
+  background-color: #696969;
+  color: #fff;
+}
+
+.intGEL .btn-group > .intGEL-btn-secondary + .dropdown-toggle {
+  border-left: 1px solid #707070;
+}
+
+.intGEL .btn-group > .intGEL-btn-primary + .dropdown-toggle {
+  border-left: 1px solid #707070;
+}
+
+.intGEL .intGEL-btn-destructive {
+  background: #E25151;
+  color: #fff;
+}
+
+.intGEL .intGEL-btn-destructive:hover, .intGEL .intGEL-btn-destructive:focus, .intGEL .intGEL-btn-destructive:active, .intGEL .intGEL-btn-destructive.active, .intGEL .open .dropdown-toggle.intGEL-btn-destructive {
+  background-color: #BF4545;
+  color: #fff;
+}
+
+.intGEL .intGEL-btn-showMore {
+  display: block;
+  width: 100%;
+  background: #8D8D8D;
+  color: #fff;
+  margin-top: 16px;
+}
+
+.intGEL .intGEL-btn-showMore:hover, .intGEL .intGEL-btn-showMore:focus, .intGEL .intGEL-btn-showMore:active, .intGEL .intGEL-btn-showMore.active, .intGEL .open .dropdown-toggle.intGEL-btn-showMore {
+  background-color: #8D8D8D;
+  color: #fff;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.intGEL .intGEL-btn-showMorePrimary {
+  display: block;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  margin-top: 16px;
+}
+
+.intGEL .intGEL-btn-showMorePrimary:hover, .intGEL .intGEL-btn-showMorePrimary:focus, .intGEL .intGEL-btn-showMorePrimary:active, .intGEL .intGEL-btn-showMorePrimary.active, .intGEL .open .dropdown-toggle.intGEL-btn-showMorePrimary {
+  background: #000;
+  color: #fff;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.intGEL #intGEL-Header {
+  top: 0;
+  position: relative;
+  background: #3f81cc;
+  text-align: right;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.35);
+  -ms-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.35);
+  -o-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.35);
+  -khtml-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.35);
+}
+
+.intGEL #intGEL-Header h1 {
+  margin: 0;
+}
+
+.intGEL #intGEL-Header .intGEL-productId {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-size: 1.2em;
+  width: 70px;
+  height: 44px;
+  background-color: inherit;
+  text-align: left;
+}
+
+.intGEL #intGEL-Header .intGEL-productId a {
+  display: inline;
+  padding: 0;
+  height: 44px;
+  font-size: .1em;
+  text-indent: -9999px;
+}
+
+.intGEL #intGEL-Header .intGEL-productId a img {
+  width: 33px;
+  margin: 7px 0px 0px 8px;
+}
+
+.intGEL #intGEL-Header .intGEL-logoType {
+  color: #fff;
+}
+
+.intGEL #intGEL-Header .intGEL-logoType a {
+  color: #fff;
+  padding: 0 8px;
+  font-size: 24px;
+  line-height: 1.46em;
+  display: block;
+}
+
+.intGEL #intGEL-Header .intGEL-logoType a:hover {
+  text-decoration: none;
+  background: #000;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox {
+  display: inline-block;
+  height: 100%;
+  position: absolute;
+  left: 70px;
+  right: 60px;
+  text-align: left;
+  width: inherit;
+  /* firefox 19+ */
+  /* ie */
+}
+
+@media screen and (min-width: 768px) {
+  .intGEL #intGEL-Header .intGEL-searchBox {
+    right: 160px;
+  }
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox form {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox form > div {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox input {
+  background: #77a5da;
+  background: rgba(250, 250, 250, 0.3);
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox input:hover {
+  background: #76a9e4;
+  background: rgba(255, 255, 255, 0.36);
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox input::-ms-clear {
+  height: 0;
+  width: 0;
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox input:focus, .intGEL #intGEL-Header .intGEL-searchBox.focused input {
+  color: #444;
+  background: #fafafa;
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox input:focus.intGEL-search-with-context, .intGEL #intGEL-Header .intGEL-searchBox.focused input.intGEL-search-with-context {
+  background: none;
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox .intGEL-input {
+  color: #fbfbfb;
+  color: rgba(255, 255, 255, 0.9);
+  border-color: #6490c2;
+  float: left;
+  position: relative;
+  width: 95%;
+  height: 28px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: calc(1% + 20px);
+  line-height: 28px;
+  margin: 0 2.5%;
+}
+
+.ie8 .intGEL #intGEL-Header .intGEL-searchBox .intGEL-input {
+  border-right: 30px solid transparent !important;
+  border-bottom-width: 0;
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox .intGEL-search {
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox .intGEL-search:focus {
+  border-color: #143356;
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox .intGEL-search-context-container {
+  position: absolute;
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox .intGEL-search-context {
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  color: #949494;
+  color: rgba(0, 0, 0, 0.42);
+  bottom: 1px;
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox button {
+  background: transparent;
+  border: none;
+  display: block;
+  font-size: 16px;
+  height: 28px;
+  line-height: 28px;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  width: 20px;
+  vertical-align: middle;
+  position: absolute;
+  right: 3%;
+  right: calc(3% + 6px);
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox label {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox button[type="submit"] {
+  color: #fbfbfb;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox button[type="reset"], .intGEL #intGEL-Header .intGEL-searchBox.focused button[type="submit"] {
+  color: #a5a5a5;
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox .intGEL-search::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox .intGEL-search::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox .intGEL-search:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox .intGEL-search:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox.focused {
+  /* firefox 19+ */
+  /* ie */
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox.focused .intGEL-search::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox.focused .intGEL-search::-moz-placeholder {
+  color: transparent;
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox.focused .intGEL-search:-moz-placeholder {
+  color: transparent;
+}
+
+.intGEL #intGEL-Header .intGEL-searchBox.focused .intGEL-search:-ms-input-placeholder {
+  color: transparent;
+}
+
+.intGEL #intGEL-Header .intGEL-navbar-toggle {
+  border-radius: 0;
+  color: #fff;
+  display: inline-block;
+  height: 100%;
+  margin: 0;
+  padding: 8px;
+  font-size: 21px;
+}
+
+.intGEL #intGEL-Header .intGEL-navbar-toggle:focus {
+  background-color: #2f6199;
+}
+
+.intGEL .intGEL-navbar-header {
+  padding: 0;
+  right: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .intGEL .intGEL-navbar-header {
+    right: 160px;
+  }
+}
+
+.intGEL .intGEL-navbar-header button {
+  height: 22px;
+  transition: background-color 0.2s;
+  -webkit-transition: background-color 0.2s;
+  -ms-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  -khtml-transition: background-color 0.2s;
+}
+
+.intGEL .intGEL-header-menu {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.intGEL .intGEL-header-menu li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.intGEL .intGEL-header-menu li a {
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 14px;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  display: block;
+}
+
+.intGEL .intGEL-header-menu li a:hover, .intGEL .intGEL-header-menu li a:active {
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.intGEL .intGEL-header-menu li.intGEL-selected a {
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.intGEL .intGEL-modalWindow {
+  z-index: 9999;
+}
+
+.intGEL .intGEL-modalWindow .modal-content {
+  border-radius: 3px;
+  z-index: 9999;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.intGEL .intGEL-modalWindow .modal-header {
+  padding: 4px 12px;
+  min-height: 1px;
+}
+
+.intGEL .intGEL-modalWindow .modal-footer {
+  padding: 8px 12px;
+  min-height: 1px;
+  border-top: 0;
+}
+
+.intGEL .intGEL-modalWindow .modal-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #666;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .intGEL #intGEL-Header .intGEL-navbar-collapse.collapse {
+    display: none !important;
+  }
+  .intGEL #intGEL-Header .intGEL-navbar-collapse.in {
+    overflow-y: visible !important;
+    display: block !important;
+  }
+  .intGEL .intGEL-navbar-header {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intGEL {
+    /* menu */
+    /* main menu */
+  }
+  .intGEL .intGEL-chunk {
+    padding: 12% 1%;
+  }
+  .intGEL .intGEL-btn-group {
+    margin-bottom: 13px;
+  }
+  .intGEL .intGEL-multipleOptionsList li {
+    padding: 6px 0;
+  }
+  .intGEL .intGEL-principles {
+    margin: 18px 0 0;
+    border-top: 1px solid #f0f0f0;
+    padding: 12px 8px;
+    border-left: 0;
+  }
+  .intGEL .intGEL-navbar-toggle {
+    margin: 0;
+    color: #fff;
+    padding: 8px;
+    margin: -8px;
+    font-size: 18px;
+  }
+  .intGEL .intGEL-menu {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  .intGEL .intGEL-menu li {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  .intGEL .intGEL-menu li a {
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    display: block;
+  }
+  .intGEL .intGEL-menu li a:hover {
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+  }
+  .intGEL .intGEL-menu li a:active {
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+  }
+  .intGEL .intGEL-menu li.intGEL-selected a {
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+  }
+  .intGEL .intGEL-firstChunk .intGEL-pattern-title {
+    top: 36px;
+  }
+}
+
+.intGEL * {
+  box-sizing: border-box;
+}
+
+.intGEL *:before, .intGEL *:after {
+  box-sizing: border-box;
+}
+
+.intGEL .intGEL-title .intGEL-icon:before {
+  content: "\f0d7";
+}
+
+.intGEL .intGEL-title.collapsed .intGEL-icon:before {
+  content: "\f0da";
+}
+
+/* tool specific colours */
+/*----------------------------------*/
+/*----------------------------------*/
+/*-------------VIVO-----------------*/
+/*----------------------------------*/
+/*----------------------------------*/
+/* primary button */
+body.intGEL-vivo .intGEL-btn-primary {
+  background: #428bca;
+}
+
+body.intGEL-vivo .intGEL-btn-primary:hover,
+body.intGEL-vivo .intGEL-btn-primary:focus,
+body.intGEL-vivo .intGEL-btn-primary:active,
+body.intGEL-vivo .intGEL-btn-primary.active,
+body.intGEL-vivo .open .dropdown-toggle.intGEL-btn-primary {
+  background-color: #428bca;
+}
+
+body.intGEL-vivo .intGEL-btn-showMorePrimary {
+  background: #428bca;
+}
+
+body.intGEL-vivo .intGEL-btn-showMorePrimary:hover,
+body.intGEL-vivo .intGEL-btn-showMorePrimary:focus,
+body.intGEL-vivo .intGEL-btn-showMorePrimary:active,
+body.intGEL-vivo .intGEL-btn-showMorePrimary.active,
+body.intGEL-vivo .open .dropdown-toggle.intGEL-btn-showMorePrimary {
+  background-color: #428bca;
+}
+
+body.intGEL-vivo .btn-group > .intGEL-btn-primary + .dropdown-toggle {
+  border-left: 1px solid #ccc;
+}
+
+/* form group */
+body.intGEL-vivo .intGEL-formGroup {
+  border-color: #428bca;
+}
+
+/*----------------------------------*/
+/*----------------------------------*/
+/*-------------Castaway-------------*/
+/*----------------------------------*/
+/*----------------------------------*/
+/* primary button */
+body.intGEL-castaway .intGEL-btn-primary {
+  background: #3ba1a0;
+}
+
+body.intGEL-castaway .intGEL-btn-primary:hover,
+body.intGEL-castaway .intGEL-btn-primary:focus,
+body.intGEL-castaway .intGEL-btn-primary:active,
+body.intGEL-castaway .intGEL-btn-primary.active,
+body.intGEL-castaway .open .dropdown-toggle.intGEL-btn-primary {
+  background-color: #3ba1a0;
+}
+
+body.intGEL-castaway .intGEL-btn-showMorePrimary {
+  background: #3ba1a0;
+}
+
+body.intGEL-castaway .intGEL-btn-showMorePrimary:hover,
+body.intGEL-castaway .intGEL-btn-showMorePrimary:focus,
+body.intGEL-castaway .intGEL-btn-showMorePrimary:active,
+body.intGEL-castaway .intGEL-btn-showMorePrimary.active,
+body.intGEL-castaway .open .dropdown-toggle.intGEL-btn-showMorePrimary {
+  background-color: #3ba1a0;
+}
+
+body.intGEL-castaway .btn-group > .intGEL-btn-primary + .dropdown-toggle {
+  border-left: 1px solid #ccc;
+}
+
+/* form group */
+body.intGEL-castaway .intGEL-formGroup {
+  border-color: #3ba1a0;
+}
+
+/*----------------------------------*/
+/*----------------------------------*/
+/*-------------Tools auth-----------*/
+/*----------------------------------*/
+/*----------------------------------*/
+/* primary button */
+body.intGEL-toolsauth .intGEL-btn-primary {
+  background: #428bca;
+}
+
+body.intGEL-toolsauth .intGEL-btn-primary:hover,
+body.intGEL-toolsauth .intGEL-btn-primary:focus,
+body.intGEL-toolsauth .intGEL-btn-primary:active,
+body.intGEL-toolsauth .intGEL-btn-primary.active,
+body.intGEL-toolsauth .open .dropdown-toggle.intGEL-btn-primary {
+  background-color: #428bca;
+}
+
+body.intGEL-vivo .intGEL-btn-showMorePrimary {
+  background: #428bca;
+}
+
+body.intGEL-toolsauth .intGEL-btn-showMorePrimary:hover,
+body.intGEL-toolsauth .intGEL-btn-showMorePrimary:focus,
+body.intGEL-toolsauth .intGEL-btn-showMorePrimary:active,
+body.intGEL-toolsauth .intGEL-btn-showMorePrimary.active,
+body.intGEL-toolsauth .open .dropdown-toggle.intGEL-btn-showMorePrimary {
+  background-color: #428bca;
+}
+
+body.intGEL-toolsauth .btn-group > .intGEL-btn-primary + .dropdown-toggle {
+  border-left: 1px solid #ccc;
+}
+
+/* form group */
+body.intGEL-toolsauth .intGEL-formGroup {
+  border-color: #428bca;
+}
+
+/*----------------------------------*/
+/*----------------------------------*/
+/*-------------LDM------------------*/
+/*----------------------------------*/
+/*----------------------------------*/
+/* primary button */
+body.intGEL-ldm .intGEL-btn-primary {
+  background: #428bca;
+}
+
+body.intGEL-ldm .intGEL-btn-primary:hover,
+body.intGEL-ldm .intGEL-btn-primary:focus,
+body.intGEL-ldm .intGEL-btn-primary:active,
+body.intGEL-ldm .intGEL-btn-primary.active,
+body.intGEL-ldm .open .dropdown-toggle.intGEL-btn-primary {
+  background-color: #428bca;
+}
+
+body.intGEL-ldm .intGEL-btn-showMorePrimary {
+  background: #428bca;
+}
+
+body.intGEL-ldm .intGEL-btn-showMorePrimary:hover,
+body.intGEL-ldm .intGEL-btn-showMorePrimary:focus,
+body.intGEL-ldm .intGEL-btn-showMorePrimary:active,
+body.intGEL-ldm .intGEL-btn-showMorePrimary.active,
+body.intGEL-ldm .open .dropdown-toggle.intGEL-btn-showMorePrimary {
+  background-color: #428bca;
+}
+
+body.intGEL-ldm .btn-group > .intGEL-btn-primary + .dropdown-toggle {
+  border-left: 1px solid #ccc;
+}
+
+/* form group */
+body.intGEL-ldm .intGEL-formGroup {
+  border-color: #428bca;
+}
+
+/*---- Accessibility ----*/
+.screen-reader-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+/*----------------------------------*/
+/*----------------------------------*/
+/*---------------iSite--------------*/
+/*----------------------------------*/
+/*----------------------------------*/
+.intGEL-isite .intGEL-btn-primary, .intGEL-isite .intGEL-btn-showMorePrimary {
+  background: #df994c;
+}
+
+.intGEL-isite .intGEL-btn-primary:hover, .intGEL-isite .intGEL-btn-primary:active, .intGEL-isite .intGEL-btn-primary:focus, .intGEL-isite .intGEL-btn-showMorePrimary:hover, .intGEL-isite .intGEL-btn-showMorePrimary:active, .intGEL-isite .intGEL-btn-showMorePrimary:focus {
+  background-color: #b1793d;
+}
+
+.intGEL-isite .btn-group.open .dropdown-toggle.intGEL-btn-primary, .intGEL-isite .btn-group.open .dropdown-toggle.intGEL-btn-showMorePrimary {
+  background-color: #b1793d;
+}
+
+.intGEL-isite .btn-group > .intGEL-btn-primary + .dropdown-toggle {
+  border-left: 1px solid #ccc;
+}
+
+.intGEL-isite .intGEL-formGroup {
+  border-color: #c98a45;
+}
+
+/*---- Cross-browser issues ----------*/
+.ie.intGEL .intGEL-select, .ie .intGEL .intGEL-select, .ie8.intGEL .intGEL-select, .ie8 .intGEL .intGEL-select, .ie9.intGEL .intGEL-select, .ie9 .intGEL .intGEL-select {
+  padding-right: 12px;
+}
+
+.ie.intGEL label.intGEL-arrow:after, .ie .intGEL label.intGEL-arrow:after, .ie8.intGEL label.intGEL-arrow:after, .ie8 .intGEL label.intGEL-arrow:after, .ie9.intGEL label.intGEL-arrow:after, .ie9 .intGEL label.intGEL-arrow:after {
+  content: '';
+}
+
+.ie.intGEL .caret, .ie .intGEL .caret, .ie8.intGEL .caret, .ie8 .intGEL .caret, .ie9.intGEL .caret, .ie9 .intGEL .caret {
+  border-top-style: solid;
+}
